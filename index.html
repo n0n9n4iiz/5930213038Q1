@@ -10,19 +10,47 @@
     <title>Document</title>
 </head>
 <body>
-    <ons-page>
-        <ons-toolbar id="toolbar">
-          <div class="left">
-            <ons-toolbar-button icon="mall"></ons-toolbar-button>
-          </div>
-      
-          <div class="center">Home</div>
-      
-          <div class="right">
-            <ons-toolbar-button icon="md-face"></ons-toolbar-button>
-          </div>
-        </ons-toolbar>
-      
-      </ons-page>
+        <ons-page>
+                <ons-toolbar>
+                        <div class="left">
+                                <ons-toolbar-button icon="md-face"></ons-toolbar-button>
+                              </div>
+                          
+                              <div class="center">Title</div>
+                          
+                              <div class="right">
+                                    <ons-toolbar-button icon="md-face"></ons-toolbar-button>
+                              </div>
+                </ons-toolbar>
+              
+                <ons-tabbar swipeable position="auto">
+                  <ons-tab page="tab1.html" label="Tab 1" icon="ion-home, material:md-home" badge="7" active>
+                  </ons-tab>
+                  <ons-tab page="tab2.html" label="Tab 2" icon="md-settings" active-icon="md-face">
+                  </ons-tab>
+                </ons-tabbar>
+              </ons-page>
+              
+              <template id="tab1.html">
+                <ons-page id="Tab1">
+                        <p style="text-align: center; margin-top: 10px;">
+                                <ons-search-input
+                                  placeholder="Search"
+                                  onchange="ons.notification.alert('Searched for: ' + this.value)"
+                                ></ons-search-input>
+                        </p>
+                </ons-page>
+              </template>
+              
+              <template id="tab2.html">
+                <ons-page id="Tab2">
+                  <p style="text-align: center;">
+                    This is the second page.
+                  </p>
+                </ons-page>
+              </template>
+    
+             
+        
 </body>
 </html>
