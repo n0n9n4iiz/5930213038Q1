@@ -16,7 +16,7 @@
                 <ons-tabbar swipeable position="auto">
                   <ons-tab page="tab1.html" label="Tab 1" icon="ion-home, material:md-home" badge="7" active>
                   </ons-tab>
-                  <ons-tab page="tab2.html" label="Tab 2" icon="md-settings" active-icon="md-face">
+                  <ons-tab page="tab2.html" label="Tab 2" icon="md-shopping-cart">
                   </ons-tab>
                 </ons-tabbar>
               </ons-page>
@@ -25,13 +25,13 @@
                 <ons-page id="Tab1">
                         <ons-toolbar>
                                 <div class="left">
-                                        <ons-toolbar-button icon="fa-shopping-bag"></ons-toolbar-button>
+                                        <ons-toolbar-button icon="fa-shopping-bag" style="color:rgb(190, 190, 36);"></ons-toolbar-button>
                                       </div>
                                   
-                                      <div class="center">Home</div>
+                                      <div class="center"><b>Home</b></div>
                                   
                                       <div class="right">
-                                            <ons-toolbar-button icon="md-help"></ons-toolbar-button>
+                                            <ons-toolbar-button icon="md-help" style="color:rgb(190, 190, 36);"></ons-toolbar-button>
                                       </div>
                         </ons-toolbar>
 
@@ -118,13 +118,13 @@
                 <ons-page id="Tab2">
                         <ons-toolbar>
                                 <div class="left">
-                                        <ons-toolbar-button icon="fa-shopping-bag"></ons-toolbar-button>
+                                        <ons-toolbar-button icon="fa-shopping-bag"style="color:rgb(190, 190, 36);"></ons-toolbar-button>
                                       </div>
                                   
-                                      <div class="center">Cart</div>
+                                      <div class="center"><b>Cart</b></div>
                                   
                                       <div class="right">
-                                            <ons-toolbar-button icon="md-help"></ons-toolbar-button>
+                                            <ons-toolbar-button icon="md-help" style="color:rgb(190, 190, 36);"></ons-toolbar-button>
                                       </div>
                         </ons-toolbar>
                   <p style="text-align: center;">
@@ -132,10 +132,10 @@
                         <ons-list>
                                 <ons-list-item>
                                         <div class="left">
-                                          <img class="list-item__thumbnail" src="https://placekitten.com/g/40/40">
+                                          <img src="photo/item1.jpg" style="height: 40px; width: 40px;">
                                         </div>
                                         <div class="center">
-                                          <span class="list-item__title">Cutest kitty</span><span class="list-item__subtitle">On the Internet</span>
+                                          <span class="list-item__title">Apple Watch Sereies 3 GPS 42mm Grey</span><span style="color:blue" class="list-item__subtitle">฿12,650.00</span>
                                         </div>
                                         <div class="right">
                                                 <ons-icon icon="md-delete"></ons-icon>
@@ -143,10 +143,10 @@
                                  </ons-list-item>
                                  <ons-list-item>
                                         <div class="left">
-                                          <img class="list-item__thumbnail" src="https://placekitten.com/g/40/40">
+                                                <img src="photo/item1.jpg" style="height: 40px; width: 40px;">
                                         </div>
                                         <div class="center">
-                                          <span class="list-item__title">Cutest kitty</span><span class="list-item__subtitle">On the Internet</span>
+                                          <span class="list-item__title">MICROLAB SPEAKER 2.1</span><span style="color:blue" class="list-item__subtitle">฿1,570.00</span>
                                         </div>
                                         <div class="right">
                                                 <ons-icon icon="md-delete"></ons-icon>
@@ -154,10 +154,10 @@
                                       </ons-list-item>
                                       <ons-list-item>
                                             <div class="left">
-                                              <img class="list-item__thumbnail" src="https://placekitten.com/g/40/40">
+                                                    <img src="photo/item1.jpg" style="height: 40px; width: 40px;">
                                             </div>
                                             <div class="center">
-                                              <span class="list-item__title">Cutest kitty</span><span class="list-item__subtitle">On the Internet</span>
+                                              <span class="list-item__title">Nike Air Max 90</span><span style="color:blue"class="list-item__subtitle">฿2,990.00</span>
                                             </div>
                                             <div class="right">
                                                     <ons-icon icon="md-delete"></ons-icon>
@@ -166,7 +166,8 @@
                         </ons-list>
 
                         <section style="text-align: center; padding-top: 10px;">
-                                <p><ons-button modifier="large">PROCEED TO PAY</ons-button></p>
+                                <p><ons-button style=" padding: 15px 32px; font-size: 16px;margin: 4px 2px;">
+                                    PROCEED TO PAY</ons-button></p>
                         </section>
                   </p>
                 </ons-page>
