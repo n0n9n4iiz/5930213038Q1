@@ -11,17 +11,7 @@
 </head>
 <body>
         <ons-page>
-                <ons-toolbar>
-                        <div class="left">
-                                <ons-toolbar-button icon="md-face"></ons-toolbar-button>
-                              </div>
-                          
-                              <div class="center">Title</div>
-                          
-                              <div class="right">
-                                    <ons-toolbar-button icon="md-face"></ons-toolbar-button>
-                              </div>
-                </ons-toolbar>
+                
               
                 <ons-tabbar swipeable position="auto">
                   <ons-tab page="tab1.html" label="Tab 1" icon="ion-home, material:md-home" badge="7" active>
@@ -33,6 +23,18 @@
               
               <template id="tab1.html">
                 <ons-page id="Tab1">
+                        <ons-toolbar>
+                                <div class="left">
+                                        <ons-toolbar-button icon="md-face"></ons-toolbar-button>
+                                      </div>
+                                  
+                                      <div class="center">Home</div>
+                                  
+                                      <div class="right">
+                                            <ons-toolbar-button icon="md-face"></ons-toolbar-button>
+                                      </div>
+                        </ons-toolbar>
+
                         <p style="text-align: center; margin-top: 10px;">
                                 <ons-search-input
                                   placeholder="Search"
@@ -59,21 +61,21 @@
                         </ons-carousel>
                         
                         <p>
-                        <ons-row style="text-align: center; height: 120px; padding-left: 5%; padding-right: 5%">
+                        <ons-row style="text-align: center; height: 100px; padding-left: 5%; padding-right: 5%">
                                 <ons-col style="background-color: rgb(247, 103, 127);">1</ons-col>
                                 <ons-col style="background-color: green;">2</ons-col>
                                 <ons-col style="background-color: rgb(67, 67, 255);">3</ons-col>
                         </ons-row>
                        </p>
                         <p>
-                        <ons-row style="text-align: center; height: 120px; padding-left: 5%; padding-right: 5%">
+                        <ons-row style="text-align: center; height: 100px; padding-left: 5%; padding-right: 5%">
                                 <ons-col style="background-color: rgb(255, 146, 164);">1</ons-col>
                                 <ons-col style="background-color: rgb(6, 182, 6);">2</ons-col>
                                 <ons-col style="background-color: rgb(142, 142, 255);">3</ons-col>
                         </ons-row>
                        </p>
                       <p>
-                        <ons-row style="text-align: center; height: 120px; padding-left: 5%; padding-right: 5%">
+                        <ons-row style="text-align: center; height: 100px; padding-left: 5%; padding-right: 5%">
                                 <ons-col style="background-color: rgb(255, 223, 228);">1</ons-col>
                                 <ons-col style="background-color: rgb(117, 226, 117);">2</ons-col>
                                 <ons-col style="background-color: rgb(176, 176, 248);">3</ons-col>
@@ -87,16 +89,57 @@
               
               <template id="tab2.html">
                 <ons-page id="Tab2">
+                        <ons-toolbar>
+                                <div class="left">
+                                        <ons-toolbar-button icon="md-face"></ons-toolbar-button>
+                                      </div>
+                                  
+                                      <div class="center">Cart</div>
+                                  
+                                      <div class="right">
+                                            <ons-toolbar-button icon="md-face"></ons-toolbar-button>
+                                      </div>
+                        </ons-toolbar>
                   <p style="text-align: center;">
                         <p style="text-align: center;">Shopping cart</p>
                         <ons-list>
-                                <ons-list-item>Item A</ons-list-item>
-                                <ons-list-item>Item B</ons-list-item>
-                                <ons-list-item>Item C</ons-list-item>
+                                <ons-list-item>
+                                        <div class="left">
+                                          <img class="list-item__thumbnail" src="https://placekitten.com/g/40/40">
+                                        </div>
+                                        <div class="center">
+                                          <span class="list-item__title">Cutest kitty</span><span class="list-item__subtitle">On the Internet</span>
+                                        </div>
+                                        <div class="right">
+                                            2
+                                        </div>
+                                 </ons-list-item>
+                                 <ons-list-item>
+                                        <div class="left">
+                                          <img class="list-item__thumbnail" src="https://placekitten.com/g/40/40">
+                                        </div>
+                                        <div class="center">
+                                          <span class="list-item__title">Cutest kitty</span><span class="list-item__subtitle">On the Internet</span>
+                                        </div>
+                                        <div class="right">
+                                                2
+                                            </div>
+                                      </ons-list-item>
+                                      <ons-list-item>
+                                            <div class="left">
+                                              <img class="list-item__thumbnail" src="https://placekitten.com/g/40/40">
+                                            </div>
+                                            <div class="center">
+                                              <span class="list-item__title">Cutest kitty</span><span class="list-item__subtitle">On the Internet</span>
+                                            </div>
+                                            <div class="right">
+                                                    2
+                                                </div>
+                                          </ons-list-item>
                         </ons-list>
 
                         <section style="text-align: center; padding-top: 10px;">
-                        <ons-button>large</ons-button>
+                                <p><ons-button modifier="large">PROCEED TO PAY</ons-button></p>
                         </section>
                   </p>
                 </ons-page>
